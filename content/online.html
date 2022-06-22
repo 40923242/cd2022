@@ -139,7 +139,83 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W12 << <a href='W12.html'>Previous</a> <br /><h1>online</h1><br />W12 << <a href='W12.html'>Previous</a> </div>
+    <div id="tipue_search_content">W12 << <a href='W12.html'>Previous</a> <br /><h1>online</h1>
+<ol>
+<li>已知左側綠色底座的<span> uArm </span>機械手臂<span>, </span>其基座座標原點位於絕對座標<span> (1.0, 0.25, 0), </span>啟動模擬後<span> green_suctionpad_frame </span>座標原點則位於<span> (0.22859, 0.26047, 0.36576), </span>請列出運算式說明<span>, </span>啟動模擬後<span> joint1, joint2 </span>與<span> joint3 </span>分別以逆時針旋轉<span> 5 </span>度後<span>, </span>求<span>green_suctionpad_frame </span>的絕對座標值<span>.</span><span></span></li>
+</ol>
+<p><span></span></p>
+<p><span></span></p>
+<p>上圖為還未旋轉之原點圖</p>
+<p>上圖為控制<span>joint1(L) </span>逆時針旋轉<span>5</span>度</p>
+<p>上圖為控制<span>joint2(J)</span>逆時針旋轉<span>5</span>度</p>
+<p>上圖為控制<span>joint3(F)</span>逆時針旋轉<span>5</span>度</p>
+<p>上圖為控制各個軸按一次鍵盤旋轉<span>5</span>度程式</p>
+<p> </p>
+<p>最後按完求得green_suctionpad_frame座標為(x:+0.4888 y:+0.3053 z:+0.2593)</p>
+<p> </p>
+<ol start="2">
+<li>已知左側<span> uarm </span>前方的紅色方塊頂端中心座標值為<span> (0.2, 0.4, 0.1), </span>請列出運算式說明左側<span> uarm </span>機械手臂的<span> joint1, joint2 </span>與<span> joint3 </span>該如何旋轉才能讓<span> end effector </span>的吸盤末端中心點移動至紅色方塊頂端中心<span>?</span></li>
+</ol>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p></p>
+<p>先算出<span>joint1</span>需要轉動多少度才可再綠色底座的<span> uArm </span>機械手臂與紅色方塊構成的直線上。</p>
+<p> </p>
+<table>
+<tbody>
+<tr>
+<td width="0"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p></p>
+<p>我們可利用三角形的餘弦定理 c<sup>2</sup>=a<sup>2</sup> + b<sup>2</sup> <span>−</span><span> 2ab cos(C)</span><span>，</span> 從上視將綠色底座、紅色方塊、吸盤這三點構成一個三角形。</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p></p>
+<p>然後利用點到點算出三邊長<span>a</span>、<span>b</span>、<span>c</span>。<span>     </span>公式：</p>
+<p>可求出角度，而後再更改程式中轉一次的值，可以對到綠色底座的<span> uArm </span>機械手臂與紅色方塊構成的直線上。</p>
+<p>但吸盤還未到達紅色方塊頂端中心，目前尚在想方法完成。但有試著利用手動的方式將吸盤到達紅色方塊頂端中心。</p><br />W12 << <a href='W12.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
