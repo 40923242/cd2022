@@ -162,6 +162,8 @@ var winkVideoData = {
 <div class="winkVideoPlayOverlayClass"></div>
 </div>
 <p>心得:</p>
+<p>現在畫零件越來越熟悉，比起一開始進步了很多，果然還是要每天都接觸一下才會進步。</p>
+<p></p>
 <p>3.<span>將零件，轉成stl檔匯出，再轉入coppeliasim裡，先加入joint，再將其放入正確位置，再放置進使其做動相對的分支裡，再修改參數，並使三軸都能做動。</span></p>
 <p></p>
 <script>
@@ -185,16 +187,25 @@ var winkVideoData = {
 <div class="winkVideoPlayOverlayClass"></div>
 </div>
 <p>心得:</p>
+<p><span>組完uarm機械手臂後丟入CoppeliaSim放入joint並排列，在修改一些參數就會好了。</span></p>
+<p></p>
 <p>4.測試題目 3. 的<span> </span><strong>XML UI slider</strong><span> </span>控制功能</p>
 <p>youtube連結:<a href="https://youtu.be/EH6xfPyyWbk">https://youtu.be/EH6xfPyyWbk</a></p>
 <p><iframe allowfullscreen="allowfullscreen" height="720" src="//www.youtube.com/embed/EH6xfPyyWbk" width="1080"></iframe></p>
 <p>心得:</p>
+<p><span>依照我們之前所學</span><span>remote API </span><span>，可以控制joint1、joint2、joint3的拖曳鍵。這算是一種比較簡單的控制三軸的方法，其他的可能就不行了。</span></p>
+<p></p>
 <p>5.uArm 機械手臂場景中, 加入<span> </span><strong>suctionPad</strong><span> </span>零件, 以手動操控或程式操控的方式, 錄製<span> </span><strong>block</strong><span> </span>方塊零件的取放模擬影片</p>
 <p>youtube連結:<a href="https://youtu.be/-Rz9K7bykQU">https://youtu.be/-Rz9K7bykQU</a><iframe allowfullscreen="allowfullscreen" height="720" src="//www.youtube.com/embed/-Rz9K7bykQU" width="1080"></iframe></p>
 <p>心得:</p>
+<p>跟之前的吸盤很類似，所以操作起來比較清楚。</p>
+<p></p>
 <p>6.由兩位 (含) 以上組員協同在新幾何外型組立的 uArm 機械手臂場景中, 以跨網路 Python remote API 的方式, 錄製圖形介面 slider 控制前三軸的轉動影片</p>
 <p>youtube連結:<a href="https://youtu.be/_fgaAbr60-8">https://youtu.be/_fgaAbr60-8</a><iframe allowfullscreen="allowfullscreen" height="720" src="//www.youtube.com/embed/_fgaAbr60-8" width="1080"></iframe></p>
-<p>心得:</p><br />W16 << <a href='W16.html'>Previous</a> </div>
+<p></p>
+<p>心得:</p>
+<p><span>查</span><span>看協同組員之IPV4，然後將程式的</span><span>self.clientID' ..... '中的IPV4改成組員的IP，我只需要在 CoppeliaSim 中的 Main script 裡增加一行程式 simRemoteApi.start(19999) ，在依照第四題拖進小白窗執行一樣動作就好了</span></p>
+<p></p><br />W16 << <a href='W16.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
